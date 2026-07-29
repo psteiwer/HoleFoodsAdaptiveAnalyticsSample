@@ -1,0 +1,18 @@
+unique_name: Date_Of_Sale
+object_type: dimension
+label: Date Of Sale
+hierarchies:
+  - unique_name: Date_Of_Sale_Hierarchy
+    label: Date Of Sale Hierarchy
+    levels:
+      - unique_name: Date_Of_Sale_Level
+is_degenerate: true
+level_attributes:
+  - unique_name: Date_Of_Sale_Level
+    label: Date Of Sale Level
+    contains_unique_names: false
+    dataset: HoleFoods_DataSet
+    key_columns:
+      - DateOfSale
+    name_column: DateOfSale
+type: standard

@@ -1,0 +1,8 @@
+unique_name: HoleFoods
+object_type: model
+label: HoleFoods
+dimensions:
+  - Date_Of_Sale
+metrics:
+  - unique_name: m_HoleFoods_AmountOfSale_sum
+relationships: []

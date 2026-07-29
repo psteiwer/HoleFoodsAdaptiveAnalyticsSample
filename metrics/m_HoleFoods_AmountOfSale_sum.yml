@@ -1,0 +1,6 @@
+unique_name: m_HoleFoods_AmountOfSale_sum
+object_type: metric
+label: Amount Of Sale
+calculation_method: sum
+column: AmountOfSale
+dataset: HoleFoods_DataSet
