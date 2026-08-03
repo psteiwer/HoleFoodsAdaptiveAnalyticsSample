@@ -1,0 +1,18 @@
+unique_name: Channel
+object_type: dimension
+label: Channel
+hierarchies:
+  - unique_name: Channel_Hierarchy
+    label: Channel Hierarchy
+    levels:
+      - unique_name: Channel_Level
+is_degenerate: true
+level_attributes:
+  - unique_name: Channel_Level
+    label: Channel Level
+    contains_unique_names: false
+    dataset: HoleFoods_DataSet
+    key_columns:
+      - Channel
+    name_column: Channel
+type: standard

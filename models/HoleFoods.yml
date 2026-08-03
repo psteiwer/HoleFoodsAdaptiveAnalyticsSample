@@ -2,7 +2,27 @@ unique_name: HoleFoods
 object_type: model
 label: HoleFoods
 dimensions:
+  - Channel
+  - Comment
+  - Discount
+  - Units_Sold
   - Date_Of_Sale
 metrics:
   - unique_name: m_HoleFoods_AmountOfSale_sum
-relationships: []
+relationships:
+  - unique_name: HoleFoods_DataSet_Product_to_Product_Product Name
+    from:
+      dataset: HoleFoods_DataSet
+      join_columns:
+        - Product
+    to:
+      dimension: Product
+      level: Product Name
+  - unique_name: HoleFoods_DataSet_Outlet_to_Outlet_City
+    from:
+      dataset: HoleFoods_DataSet
+      join_columns:
+        - Outlet
+    to:
+      dimension: Outlet
+      level: City

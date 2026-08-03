@@ -1,0 +1,10 @@
+unique_name: Region_DataSet
+object_type: dataset
+label: Region_DataSet
+columns:
+  - name: ID
+    data_type: long
+  - name: Name
+    data_type: string
+connection_id: con_default_HoleFoods
+table: Region

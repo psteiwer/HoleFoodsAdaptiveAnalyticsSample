@@ -1,0 +1,18 @@
+unique_name: Comment
+object_type: dimension
+label: Comment
+hierarchies:
+  - unique_name: Comment_Hierarchy
+    label: Comment Hierarchy
+    levels:
+      - unique_name: Comment_Level
+is_degenerate: true
+level_attributes:
+  - unique_name: Comment_Level
+    label: Comment Level
+    contains_unique_names: false
+    dataset: HoleFoods_DataSet
+    key_columns:
+      - Comment
+    name_column: Comment
+type: standard

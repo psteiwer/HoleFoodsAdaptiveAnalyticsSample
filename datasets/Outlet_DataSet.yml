@@ -1,0 +1,20 @@
+unique_name: Outlet_DataSet
+object_type: dataset
+label: Outlet
+columns:
+  - name: ID
+    data_type: long
+  - name: City
+    data_type: string
+  - name: Country
+    data_type: long
+  - name: Latitude
+    data_type: double
+  - name: Longitude
+    data_type: double
+  - name: Population
+    data_type: int
+  - name: Type
+    data_type: string
+connection_id: con_default_HoleFoods
+table: Outlet

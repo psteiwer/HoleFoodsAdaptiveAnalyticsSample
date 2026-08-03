@@ -1,0 +1,18 @@
+unique_name: Discount
+object_type: dimension
+label: Discount
+hierarchies:
+  - unique_name: Discount_Hierarchy
+    label: Discount Hierarchy
+    levels:
+      - unique_name: Discount_Level
+is_degenerate: true
+level_attributes:
+  - unique_name: Discount_Level
+    label: Discount Level
+    contains_unique_names: false
+    dataset: HoleFoods_DataSet
+    key_columns:
+      - Discount
+    name_column: Discount
+type: standard

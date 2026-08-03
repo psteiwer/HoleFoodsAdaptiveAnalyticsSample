@@ -1,0 +1,18 @@
+unique_name: Units_Sold
+object_type: dimension
+label: Units Sold
+hierarchies:
+  - unique_name: Units_Sold_Hierarchy
+    label: Units Sold Hierarchy
+    levels:
+      - unique_name: Units_Sold_Level
+is_degenerate: true
+level_attributes:
+  - unique_name: Units_Sold_Level
+    label: Units Sold Level
+    contains_unique_names: false
+    dataset: HoleFoods_DataSet
+    key_columns:
+      - UnitsSold
+    name_column: UnitsSold
+type: standard

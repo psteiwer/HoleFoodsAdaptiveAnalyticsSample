@@ -1,0 +1,12 @@
+unique_name: Country_DataSet
+object_type: dataset
+label: Country_DataSet
+columns:
+  - name: ID
+    data_type: long
+  - name: Name
+    data_type: string
+  - name: Region
+    data_type: long
+connection_id: con_default_HoleFoods
+table: Country

@@ -1,0 +1,51 @@
+unique_name: Outlet
+object_type: dimension
+label: Outlet
+hierarchies:
+  - unique_name: Outlet Hierarchy
+    label: Outlet Hierarchy
+    levels:
+      - unique_name: Region
+      - unique_name: Country
+      - unique_name: City
+level_attributes:
+  - unique_name: City
+    label: City
+    contains_unique_names: false
+    dataset: Outlet_DataSet
+    is_unique_key: true
+    key_columns:
+      - ID
+    name_column: City
+  - unique_name: Country
+    label: Country
+    contains_unique_names: false
+    dataset: Country_DataSet
+    is_unique_key: true
+    key_columns:
+      - ID
+    name_column: Name
+  - unique_name: Region
+    label: Region
+    contains_unique_names: false
+    dataset: Region_DataSet
+    is_unique_key: true
+    key_columns:
+      - ID
+    name_column: Name
+relationships:
+  - from:
+      dataset: Outlet_DataSet
+      join_columns:
+        - Country
+    to:
+      level: Country
+    type: snowflake
+  - from:
+      dataset: Country_DataSet
+      join_columns:
+        - Region
+    to:
+      level: Region
+    type: snowflake
+type: standard
