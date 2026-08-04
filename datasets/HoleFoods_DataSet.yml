@@ -30,5 +30,11 @@ columns:
     data_type: int
   - name: ZipCode
     data_type: string
+  - name: Year
+    data_type: int
+    sql: YEAR(DateOfSale)
+  - name: Month
+    data_type: string
+    sql: YEAR(DateOfSale) || '-' || MONTH(DateOfSale)
 connection_id: con_default_HoleFoods
 table: SalesTransaction

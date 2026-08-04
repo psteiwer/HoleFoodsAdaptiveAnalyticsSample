@@ -5,14 +5,35 @@ hierarchies:
   - unique_name: Date_Of_Sale_Hierarchy
     label: Date Of Sale Hierarchy
     levels:
-      - unique_name: Date_Of_Sale_Level
+      - unique_name: Year
+      - unique_name: Month
+      - unique_name: Day
 is_degenerate: true
 level_attributes:
-  - unique_name: Date_Of_Sale_Level
-    label: Date Of Sale Level
+  - unique_name: Day
+    label: Day
     contains_unique_names: false
     dataset: HoleFoods_DataSet
     key_columns:
       - DateOfSale
     name_column: DateOfSale
-type: standard
+    time_unit: day
+  - unique_name: Month
+    label: Month
+    contains_unique_names: false
+    dataset: HoleFoods_DataSet
+    is_unique_key: false
+    key_columns:
+      - Month
+    name_column: Month
+    time_unit: month
+  - unique_name: Year
+    label: Year
+    contains_unique_names: false
+    dataset: HoleFoods_DataSet
+    is_unique_key: false
+    key_columns:
+      - Year
+    name_column: Year
+    time_unit: year
+type: time
