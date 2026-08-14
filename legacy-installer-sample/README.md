@@ -4,7 +4,19 @@ This folder contains the original AtScale sample bundle for importing HoleFoods 
 
 > **Note:** This approach uses an older AtScale project format (XML-based). The current version of this repo uses the newer container-based YAML format — see the [root README](../README.md).
 
+## Prerequisites
+
+- **IRIS**: The namespace you're importing into must have the `MySample` schema defined (see step below).
+- **AtScale**: A Data Warehouse (DWH) connection to your IRIS instance must already be configured in AtScale before running the installer. You will select this connection during the import.
+
+> No external dataset or IRIS BI sample is required — the installer creates all necessary tables in IRIS directly from the bundled CSV files.
+
 ## Installing the Sample
+
+### Create the zip file
+A pre-built zip is not included in this repo — you must create it fresh from the source files before uploading. To create the zip, select both `MySample/` and `manifest.json` from this folder and zip them together.
+
+![image](https://user-images.githubusercontent.com/24307254/121373511-20624100-c90d-11eb-964a-bd0aee369283.PNG)
 
 ### Prep IRIS before loading the sample
 1. Make sure you have the **MySample** schema defined in the IRIS namespace you want to import the sample into

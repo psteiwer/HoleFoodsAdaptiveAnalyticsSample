@@ -1,38 +1,38 @@
 {
-  "name": "mysample",
-  "src": "mysample",
-  "dest": "mysample",
+  "name": "MySample",
+  "src": "MySample",
+  "dest": "MySample",
   "generateDdl": true,
   "dataFileFieldDelimiter": ",",
   "dataFileLineDelimiter": "\r\n",
   "dataFiles": [
     {
-      "src": "MySample/data/dateomniture/dateomniture.csv",
+      "src": "data/dateomniture/dateomniture.csv",
       "dest": "dateomniture/dateomniture.csv",
       "datasetName": "dateomniture"
     },
     {
-      "src": "MySample/data/country/country.csv",
+      "src": "data/country/country.csv",
       "dest": "country/country.csv",
       "datasetName": "country"
     },
     {
-      "src": "MySample/data/outlet/outlet.csv",
+      "src": "data/outlet/outlet.csv",
       "dest": "outlet/outlet.csv",
       "datasetName": "Outlet"
     },
     {
-      "src": "MySample/data/product/product.csv",
+      "src": "data/product/product.csv",
       "dest": "product/product.csv",
       "datasetName": "Product"
     },
     {
-      "src": "MySample/data/region/region.csv",
+      "src": "data/region/region.csv",
       "dest": "region/region.csv",
       "datasetName": "Region"
     },
     {
-      "src": "MySample/data/salestransaction/salestransaction.csv",
+      "src": "data/salestransaction/salestransaction.csv",
       "dest": "salestransaction/salestransaction.csv",
       "datasetName": "SalesTransaction"
     }
@@ -40,7 +40,7 @@
   "projects": [
     {
       "id": "0ec961b7-1d6b-4352-4b83-7db67d8693d1",
-      "file": "MySample/project/MySample.xml"
+      "file": "project/MySample.xml"
     }
   ]
 }
