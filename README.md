@@ -11,6 +11,8 @@ This repo contains two versions of the HoleFoods sample for AtScale:
 
 ## Container Version (Current)
 
+To use this sample, simply add this repo in the Workspace panel from the Design Center.
+
 The YAML files at the root of this repo define the HoleFoods cube using the current AtScale container-based project format.
 
 ### Structure
